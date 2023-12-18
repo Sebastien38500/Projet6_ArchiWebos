@@ -1,0 +1,452 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/** end reset css**/
+body {
+    max-width: 1140px;
+    margin: auto;
+    font-family: "Work Sans";
+    font-size: 14px;
+    background-color: #fffef8;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+section {
+    margin: 50px 0;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Syne";
+    font-size: 22px;
+    font-weight: 800;
+    color: #b1663c;
+}
+
+h1 > span {
+    font-family: "Work Sans";
+    font-size: 10px;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    font-family: "Syne";
+    font-weight: 700;
+    font-size: 30px;
+    color: #1d6154;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav li {
+    padding: 0 10px;
+    font-size: 1.2em;
+    color: #000000;
+}
+a {
+    text-decoration: none;
+}
+li:hover {
+    color: #b1663c;
+}
+button {
+    height: 37px;
+    border-radius: 60px;
+    border: #1d6154 solid 1px;
+    color: #1d6154;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Syne";
+    min-width: 100px;
+}
+.barre-edition {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 40px;
+    width: 100%;
+}
+.barre-edition i,
+.barre-edition p {
+    color: #ffffff;
+}
+.edition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
+.filtres {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px 0 40px 0;
+}
+.select {
+    background-color: #1d6154;
+    color: #ffffff;
+}
+#introduction {
+    display: flex;
+    align-items: center;
+}
+#introduction figure {
+    flex: 1;
+}
+#introduction img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+#introduction article {
+    flex: 1;
+}
+#introduction h2 {
+    margin-bottom: 1em;
+}
+
+#introduction p {
+    margin-bottom: 0.5em;
+}
+.titre-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#portfolio h2 {
+    margin: 0 25px 0 0;
+}
+.btn-modifier a {
+    color: black;
+}
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.gallery img {
+    width: 100%;
+}
+#contact {
+    width: 50%;
+    margin: auto;
+}
+#contact > * {
+    text-align: center;
+}
+#contact h2 {
+    margin-bottom: 20px;
+}
+#contact form {
+    text-align: left;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label {
+    margin: 2em 0 1em 0;
+}
+#contact textarea {
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#body_login {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#main_login {
+    width: 33%;
+    margin: auto;
+}
+#main_login > * {
+    text-align: center;
+}
+#main_login h2 {
+    margin-bottom: 20px;
+}
+#main_login form {
+    text-align: left;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#main_login input {
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#main_login label {
+    margin: 2em 0 1em 0;
+}
+#main_login a {
+    display: flex;
+    justify-content: center;
+}
+#login-form input[type="text"] {
+    width: 379px;
+    height: 51px;
+    border: none;
+}
+.bouton-actif {
+    background-color: #1D6154;
+}
+
+input[type="submit"] {
+    font-family: "Syne";
+    font-weight: 700;
+    color: white;
+    background-color: #1d6154;
+    margin: 2em auto;
+    width: 180px;
+    text-align: center;
+    border-radius: 60px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2em;
+}
+
+.modale {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modale-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    width: 630px;
+    max-height: 95%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.js-modale-close {
+    position: relative;
+    left: 300px;
+}
+
+.modale-wrapper h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+    font-family: "Work Sans";
+    color: #000000;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.js-modale-projets {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    row-gap: 25px;
+    padding-bottom: 60px;
+    border-bottom: #b3b3b3 solid 1px;
+}
+
+.js-btn-ajouter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 237px;
+    height: 36px;
+    border-radius: 60px;
+    margin-top: 40px;
+    color: #ffffff;
+    background-color: #1d6154;
+    font-weight: 700;
+    font-family: "syne";
+}
+
+.gallery-projet-modale {
+    margin: 0 5px;
+    width: 75px;
+    height: 100px;
+}
+.gallery-projet-modale img {
+    width: 75px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.fa-trash-can {
+    position: relative;
+    bottom: 98px;
+    left: 51px;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    border-radius: 20%;
+}
+.modale2 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.modale2-entete {
+    display: flex;
+    width: 100%;
+    gap: 310px;
+}
+.fa-image {
+    color: #b9c5cc;
+    font-size: 90px;
+    margin: 20px;
+}
+.photo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8f1f6;
+}
+.photo-form label {
+    font-family: "work sans";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: #cbd6dc;
+    color: #306685;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+.photo-form input {
+    display: none;
+}
+.photo-form p {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.titre-form {
+    display: flex;
+    flex-direction: column;
+}
+.categorie-form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: #b3b3b3 solid 1px;
+}
+.categorie-form select,
+.titre-form input {
+    width: 420px;
+    height: 50px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-top: 10px;
+}
+.modale2-form {
+    display: flex;
+    flex-direction: column;
+}
+.modale2-form div {
+    margin-top: 25px;
+}
+#js-valider {
+    background-color: #a7a7a7;
+    width: 290px;
+    height: 35px;
+    border: none;
+}
+#miniature {
+    width: 130px;
+}
